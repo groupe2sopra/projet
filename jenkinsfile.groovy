@@ -3,7 +3,7 @@ node{
   try{
     stage('PremiereEtape'){
       sh "echo 'Hello World !!'"
-      sh"ls"
+      sh "ls -al"
       sh " cd .. "
       
       sh "ls -al"
