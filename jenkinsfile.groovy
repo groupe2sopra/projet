@@ -5,11 +5,8 @@ node{
       sh "echo 'Hello World !!'"
       sh "ls -al"
       sh " cd .. "
-      
+      sh "tar -cf test_build.tar ."
       sh "ls -al"
-    }
-    stage ('DeuxiemeEtape'){
-      sh "echo 'Hello World 2 !!'"
     }
   }
   finally{
