@@ -6,7 +6,7 @@ node{
       sh"ls"
       sh " cd .. "
       
-      sh "ls"
+      sh "ls -al"
     }
     stage ('DeuxiemeEtape'){
       sh "echo 'Hello World 2 !!'"
