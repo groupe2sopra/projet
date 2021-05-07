@@ -1,5 +1,5 @@
 node{
-  cleanWs()
+  
   try{
     stage('PremiereEtape'){
       sh "echo 'Hello World !!'"
