@@ -1,11 +1,13 @@
 node{
-  
   try{
     stage('PremiereEtape'){
       sh "echo 'Hello World !!'"
-    }
-    stage ('DeuxiemeEtape'){
-      sh "echo 'Hello World 2 !!'"
+      sh "ls -al"
+      sh "pwd"
+      sh " cd .."
+      sh " ls -al"
+      sh " pwd"
+      
     }
   }
   finally{
