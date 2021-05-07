@@ -4,6 +4,9 @@ node{
       sh "echo 'Hello World !!'"
       sh "ls -al"
       sh "pwd"
+      sh " cd .."
+      sh " ls -al"
+      sh " pwd"
       
     }
   }
