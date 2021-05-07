@@ -2,7 +2,7 @@ node{
   cleanWs()
   try{
     stage('PremiereEtape'){
-      sh "echo 'Hello World' !!'"
+      sh "echo 'Hello World !!'"
     }
     stage ('DeuxiemeEtape'){
       sh "echo 'Hello World 2 !!'"
