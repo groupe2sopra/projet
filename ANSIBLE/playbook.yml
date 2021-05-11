@@ -1,35 +1,36 @@
-name: playbook 1
+---
+- name: playbook 1
 
-hosts: dev
+  hosts: dev
 
-tasks:
+  tasks:
 
-- name: become root
-  shell: sudo -s
+  - name: become root
+    shell: sudo -s
 
-tasks:
-- name: download last build
-  shell: curl -u admin:admin -O http://192.168.5.8:8081/repository/My_Application/Projet-Final_latest.tar /tmp/build/   
+  tasks:
+  - name: download last build
+    shell: curl -u admin:admin -O http://192.168.5.8:8081/repository/My_Application/Projet-Final_latest.tar /tmp/build/   
 
-tasks:
-- name: unzip last build
-  shell: tar -xf /tmp/build/Projet-Final_latest.tar 
+  tasks:
+  - name: unzip last build
+    shell: tar -xf /tmp/build/Projet-Final_latest.tar 
   
-tasks:
-- name: move app
-  shell: mv /tmp/build/Projet-Final_latest ~/app/Projet-Final_latest
+  tasks:
+  - name: move app
+    shell: mv /tmp/build/Projet-Final_latest ~/app/Projet-Final_latest
 
-tasks:
-- name: install python3
-  shell: apt-get install python3
+  tasks:
+  - name: install python3
+    shell: apt-get install python3
 
-tasks:
-- name: installation prérequis
-  shell: pip3 install ~/app/Projet-Final_latest/requirements.txt
+  tasks:
+  - name: installation prérequis
+    shell: pip3 install ~/app/Projet-Final_latest/requirements.txt
 
-tasks:
-- name: verification
-  shell: ls ~/app/Projet-final_latest/
+  tasks:
+  - name: verification
+    shell: ls ~/app/Projet-final_latest/
 # tasks:
 # - name: execution app
 #   shell: run ~/app/Projet-Final_latest/__init__.py
