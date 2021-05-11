@@ -2,6 +2,8 @@
 - name: playbook 1
 
   hosts: dev
+  vars:
+    ansible_ssh_private_key_file: ./Key
 
   tasks:
 
