@@ -10,7 +10,7 @@
 
   tasks:
   - name: download last build
-    shell: curl -u admin:admin -O http://192.168.5.8:8081/repository/My_Application/Projet-Final_latest.tar /tmp/build/   
+    shell: curl -u admin:admin -O http://10.0.10.98:8081/repository/My_Application/Projet-Final_latest.tar /tmp/build/   
 
   tasks:
   - name: unzip last build
